@@ -12,7 +12,7 @@ public class PEAnalyzer extends JFrame {
 
     public PEAnalyzer() {
 
-        super("PE Malware Analyzer");
+        super("PE Analyzer");
 
         setSize(400, 200);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -45,6 +45,9 @@ public class PEAnalyzer extends JFrame {
                     File selectedFile = chooser.getSelectedFile();
                     processFile(selectedFile);
 
+
+                    System.exit(0);
+
                 } else if (JFileChooser.CANCEL_SELECTION.equals(e.getActionCommand())) {
 
                     dispose();
@@ -69,7 +72,15 @@ public class PEAnalyzer extends JFrame {
         System.out.println(file.getName());
 
 
-        System.out.println(PEUtils.executeCommand("pedump"));
+        PEFileDump fileDump = null;
+        try {
+            fileDump = PEDumper.processFile(file);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(fileDump.getCSV(null, null, null));
+
 
     }
 

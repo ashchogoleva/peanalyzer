@@ -4,6 +4,8 @@ import org.yaml.snakeyaml.Yaml;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 public class PEDumper {
@@ -68,12 +70,27 @@ public class PEDumper {
         String dump = this.getDump(filepath, "--data-directory");
         dump = dump.replaceAll("=== DATA DIRECTORY ===", "");
         dump = dump.replaceAll("\\!ruby\\/struct:PEdump::IMAGE_DATA_DIRECTORY", "");
-        System.out.println(dump);
 
-        //Yaml yaml = new Yaml();
+        Yaml yaml = new Yaml();
 
-        //Map dataDirectory = (ArrayList) yaml.load(dump);
 
+        String[] typesArray = {"EXPORT", "IAT", "Bound_IAT", "LOAD_CONFIG", "BASERELOC", "CLR_Header"};
+        List<String> typesList = Arrays.asList(typesArray);
+
+        List<Map> data = (List<Map>) yaml.load(dump);
+
+        for (Map directory : data) {
+            if (typesList.contains((String) directory.get("type"))) {
+                String fieldName = "size_" + directory.get("type");
+
+                try {
+                    fileDump.getClass().getField(fieldName).set(fileDump, directory.get("size"));
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
 
     }
 

@@ -56,8 +56,14 @@ public class PEDumper {
         dump = dump.replaceAll("\\!ruby\\/struct:PEdump::IMAGE_SECTION_HEADER", "");
         dump = dump.replaceAll("\\!binary", "");
 
+        //System.out.println(dump);
+
 
         Map peHeader = (Map) yaml.load(dump);
+        if (peHeader == null) {
+            return;
+        }
+        //System.out.println(peHeader.keySet());
 
         Map image_optional_header = (Map) peHeader.get("image_optional_header");
         fileDump.sizeOfInitializedData = (Integer) image_optional_header.get("SizeOfInitializedData");
@@ -68,16 +74,21 @@ public class PEDumper {
 
     private void extractDataDirectoryData(String filepath, PEFileDump fileDump) {
         String dump = this.getDump(filepath, "--data-directory");
+        Yaml yaml = new Yaml();
+
         dump = dump.replaceAll("=== DATA DIRECTORY ===", "");
         dump = dump.replaceAll("\\!ruby\\/struct:PEdump::IMAGE_DATA_DIRECTORY", "");
 
-        Yaml yaml = new Yaml();
-
+        //System.out.println(dump);
 
         String[] typesArray = {"EXPORT", "IAT", "Bound_IAT", "LOAD_CONFIG", "BASERELOC", "CLR_Header"};
         List<String> typesList = Arrays.asList(typesArray);
 
         List<Map> data = (List<Map>) yaml.load(dump);
+
+        if (data == null) {
+            return;
+        }
 
         for (Map directory : data) {
             if (typesList.contains((String) directory.get("type"))) {

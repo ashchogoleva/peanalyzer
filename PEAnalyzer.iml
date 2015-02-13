@@ -8,11 +8,13 @@
       <excludeFolder url="file://$MODULE_DIR$/files" />
       <excludeFolder url="file://$MODULE_DIR$/peanalyzer/src" />
       <excludeFolder url="file://$MODULE_DIR$/peanalyzer/target" />
+      <excludeFolder url="file://$MODULE_DIR$/rapidminer" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="org.yaml:snakeyaml:1.14" level="project" />
     <orderEntry type="library" name="com.googlecode.jcsv:jcsv:1.4.0" level="project" />
     <orderEntry type="library" name="net.java.dev:jvyaml:0.2.1" level="project" />
+    <orderEntry type="library" name="rapidminer" level="project" />
   </component>
 </module>

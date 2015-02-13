@@ -1,0 +1,1047 @@
+<object-stream>
+  <TreeModel id="1" serialization="custom">
+    <com.rapidminer.operator.AbstractIOObject>
+      <default>
+        <source>Decision Tree</source>
+      </default>
+    </com.rapidminer.operator.AbstractIOObject>
+    <com.rapidminer.operator.ResultObjectAdapter>
+      <default>
+        <annotations id="2">
+          <keyValueMap id="3"/>
+        </annotations>
+      </default>
+    </com.rapidminer.operator.ResultObjectAdapter>
+    <com.rapidminer.operator.AbstractModel>
+      <default>
+        <headerExampleSet id="4" serialization="custom">
+          <com.rapidminer.operator.ResultObjectAdapter>
+            <default>
+              <annotations id="5">
+                <keyValueMap id="6">
+                  <entry>
+                    <string>Source</string>
+                    <string>SELECT *
+FROM `files`</string>
+                  </entry>
+                </keyValueMap>
+              </annotations>
+            </default>
+          </com.rapidminer.operator.ResultObjectAdapter>
+          <com.rapidminer.example.set.AbstractExampleSet>
+            <default>
+              <idMap id="7"/>
+              <statisticsMap id="8"/>
+            </default>
+          </com.rapidminer.example.set.AbstractExampleSet>
+          <com.rapidminer.example.set.HeaderExampleSet>
+            <default>
+              <attributes class="SimpleAttributes" id="9">
+                <attributes class="linked-list" id="10">
+                  <AttributeRole id="11">
+                    <special>false</special>
+                    <attribute class="NumericalAttribute" id="12" serialization="custom">
+                      <com.rapidminer.example.table.AbstractAttribute>
+                        <default>
+                          <annotations id="13">
+                            <keyValueMap id="14">
+                              <entry>
+                                <string>sql_type</string>
+                                <string>INT</string>
+                              </entry>
+                            </keyValueMap>
+                          </annotations>
+                          <attributeDescription id="15">
+                            <name>bytes_in_last_block</name>
+                            <valueType>3</valueType>
+                            <blockType>1</blockType>
+                            <defaultValue>0.0</defaultValue>
+                            <index>4</index>
+                          </attributeDescription>
+                          <constructionDescription>bytes_in_last_block</constructionDescription>
+                          <statistics class="linked-list" id="16">
+                            <NumericalStatistics id="17">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <valueCounter>0</valueCounter>
+                            </NumericalStatistics>
+                            <WeightedNumericalStatistics id="18">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <totalWeight>0.0</totalWeight>
+                              <count>0.0</count>
+                            </WeightedNumericalStatistics>
+                            <com.rapidminer.example.MinMaxStatistics id="19">
+                              <minimum>Infinity</minimum>
+                              <maximum>-Infinity</maximum>
+                            </com.rapidminer.example.MinMaxStatistics>
+                            <UnknownStatistics id="20">
+                              <unknownCounter>0</unknownCounter>
+                            </UnknownStatistics>
+                          </statistics>
+                          <transformations id="21"/>
+                        </default>
+                      </com.rapidminer.example.table.AbstractAttribute>
+                    </attribute>
+                  </AttributeRole>
+                  <AttributeRole id="22">
+                    <special>false</special>
+                    <attribute class="NumericalAttribute" id="23" serialization="custom">
+                      <com.rapidminer.example.table.AbstractAttribute>
+                        <default>
+                          <annotations id="24">
+                            <keyValueMap id="25">
+                              <entry>
+                                <string>sql_type</string>
+                                <string>INT</string>
+                              </entry>
+                            </keyValueMap>
+                          </annotations>
+                          <attributeDescription id="26">
+                            <name>blocks_in_file</name>
+                            <valueType>3</valueType>
+                            <blockType>1</blockType>
+                            <defaultValue>0.0</defaultValue>
+                            <index>5</index>
+                          </attributeDescription>
+                          <constructionDescription>blocks_in_file</constructionDescription>
+                          <statistics class="linked-list" id="27">
+                            <NumericalStatistics id="28">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <valueCounter>0</valueCounter>
+                            </NumericalStatistics>
+                            <WeightedNumericalStatistics id="29">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <totalWeight>0.0</totalWeight>
+                              <count>0.0</count>
+                            </WeightedNumericalStatistics>
+                            <com.rapidminer.example.MinMaxStatistics id="30">
+                              <minimum>Infinity</minimum>
+                              <maximum>-Infinity</maximum>
+                            </com.rapidminer.example.MinMaxStatistics>
+                            <UnknownStatistics id="31">
+                              <unknownCounter>0</unknownCounter>
+                            </UnknownStatistics>
+                          </statistics>
+                          <transformations id="32"/>
+                        </default>
+                      </com.rapidminer.example.table.AbstractAttribute>
+                    </attribute>
+                  </AttributeRole>
+                  <AttributeRole id="33">
+                    <special>false</special>
+                    <attribute class="NumericalAttribute" id="34" serialization="custom">
+                      <com.rapidminer.example.table.AbstractAttribute>
+                        <default>
+                          <annotations id="35">
+                            <keyValueMap id="36">
+                              <entry>
+                                <string>sql_type</string>
+                                <string>INT</string>
+                              </entry>
+                            </keyValueMap>
+                          </annotations>
+                          <attributeDescription id="37">
+                            <name>min_extra_paragraphs</name>
+                            <valueType>3</valueType>
+                            <blockType>1</blockType>
+                            <defaultValue>0.0</defaultValue>
+                            <index>6</index>
+                          </attributeDescription>
+                          <constructionDescription>min_extra_paragraphs</constructionDescription>
+                          <statistics class="linked-list" id="38">
+                            <NumericalStatistics id="39">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <valueCounter>0</valueCounter>
+                            </NumericalStatistics>
+                            <WeightedNumericalStatistics id="40">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <totalWeight>0.0</totalWeight>
+                              <count>0.0</count>
+                            </WeightedNumericalStatistics>
+                            <com.rapidminer.example.MinMaxStatistics id="41">
+                              <minimum>Infinity</minimum>
+                              <maximum>-Infinity</maximum>
+                            </com.rapidminer.example.MinMaxStatistics>
+                            <UnknownStatistics id="42">
+                              <unknownCounter>0</unknownCounter>
+                            </UnknownStatistics>
+                          </statistics>
+                          <transformations id="43"/>
+                        </default>
+                      </com.rapidminer.example.table.AbstractAttribute>
+                    </attribute>
+                  </AttributeRole>
+                  <AttributeRole id="44">
+                    <special>false</special>
+                    <attribute class="NumericalAttribute" id="45" serialization="custom">
+                      <com.rapidminer.example.table.AbstractAttribute>
+                        <default>
+                          <annotations id="46">
+                            <keyValueMap id="47">
+                              <entry>
+                                <string>sql_type</string>
+                                <string>INT</string>
+                              </entry>
+                            </keyValueMap>
+                          </annotations>
+                          <attributeDescription id="48">
+                            <name>overlay_number</name>
+                            <valueType>3</valueType>
+                            <blockType>1</blockType>
+                            <defaultValue>0.0</defaultValue>
+                            <index>7</index>
+                          </attributeDescription>
+                          <constructionDescription>overlay_number</constructionDescription>
+                          <statistics class="linked-list" id="49">
+                            <NumericalStatistics id="50">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <valueCounter>0</valueCounter>
+                            </NumericalStatistics>
+                            <WeightedNumericalStatistics id="51">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <totalWeight>0.0</totalWeight>
+                              <count>0.0</count>
+                            </WeightedNumericalStatistics>
+                            <com.rapidminer.example.MinMaxStatistics id="52">
+                              <minimum>Infinity</minimum>
+                              <maximum>-Infinity</maximum>
+                            </com.rapidminer.example.MinMaxStatistics>
+                            <UnknownStatistics id="53">
+                              <unknownCounter>0</unknownCounter>
+                            </UnknownStatistics>
+                          </statistics>
+                          <transformations id="54"/>
+                        </default>
+                      </com.rapidminer.example.table.AbstractAttribute>
+                    </attribute>
+                  </AttributeRole>
+                  <AttributeRole id="55">
+                    <special>false</special>
+                    <attribute class="NumericalAttribute" id="56" serialization="custom">
+                      <com.rapidminer.example.table.AbstractAttribute>
+                        <default>
+                          <annotations id="57">
+                            <keyValueMap id="58">
+                              <entry>
+                                <string>sql_type</string>
+                                <string>INT</string>
+                              </entry>
+                            </keyValueMap>
+                          </annotations>
+                          <attributeDescription id="59">
+                            <name>sizeOfInitializedData</name>
+                            <valueType>3</valueType>
+                            <blockType>1</blockType>
+                            <defaultValue>0.0</defaultValue>
+                            <index>8</index>
+                          </attributeDescription>
+                          <constructionDescription>sizeOfInitializedData</constructionDescription>
+                          <statistics class="linked-list" id="60">
+                            <NumericalStatistics id="61">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <valueCounter>0</valueCounter>
+                            </NumericalStatistics>
+                            <WeightedNumericalStatistics id="62">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <totalWeight>0.0</totalWeight>
+                              <count>0.0</count>
+                            </WeightedNumericalStatistics>
+                            <com.rapidminer.example.MinMaxStatistics id="63">
+                              <minimum>Infinity</minimum>
+                              <maximum>-Infinity</maximum>
+                            </com.rapidminer.example.MinMaxStatistics>
+                            <UnknownStatistics id="64">
+                              <unknownCounter>0</unknownCounter>
+                            </UnknownStatistics>
+                          </statistics>
+                          <transformations id="65"/>
+                        </default>
+                      </com.rapidminer.example.table.AbstractAttribute>
+                    </attribute>
+                  </AttributeRole>
+                  <AttributeRole id="66">
+                    <special>false</special>
+                    <attribute class="NumericalAttribute" id="67" serialization="custom">
+                      <com.rapidminer.example.table.AbstractAttribute>
+                        <default>
+                          <annotations id="68">
+                            <keyValueMap id="69">
+                              <entry>
+                                <string>sql_type</string>
+                                <string>INT</string>
+                              </entry>
+                            </keyValueMap>
+                          </annotations>
+                          <attributeDescription id="70">
+                            <name>numberOfSymbols</name>
+                            <valueType>3</valueType>
+                            <blockType>1</blockType>
+                            <defaultValue>0.0</defaultValue>
+                            <index>9</index>
+                          </attributeDescription>
+                          <constructionDescription>numberOfSymbols</constructionDescription>
+                          <statistics class="linked-list" id="71">
+                            <NumericalStatistics id="72">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <valueCounter>0</valueCounter>
+                            </NumericalStatistics>
+                            <WeightedNumericalStatistics id="73">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <totalWeight>0.0</totalWeight>
+                              <count>0.0</count>
+                            </WeightedNumericalStatistics>
+                            <com.rapidminer.example.MinMaxStatistics id="74">
+                              <minimum>Infinity</minimum>
+                              <maximum>-Infinity</maximum>
+                            </com.rapidminer.example.MinMaxStatistics>
+                            <UnknownStatistics id="75">
+                              <unknownCounter>0</unknownCounter>
+                            </UnknownStatistics>
+                          </statistics>
+                          <transformations id="76"/>
+                        </default>
+                      </com.rapidminer.example.table.AbstractAttribute>
+                    </attribute>
+                  </AttributeRole>
+                  <AttributeRole id="77">
+                    <special>false</special>
+                    <attribute class="NumericalAttribute" id="78" serialization="custom">
+                      <com.rapidminer.example.table.AbstractAttribute>
+                        <default>
+                          <annotations id="79">
+                            <keyValueMap id="80">
+                              <entry>
+                                <string>sql_type</string>
+                                <string>INT</string>
+                              </entry>
+                            </keyValueMap>
+                          </annotations>
+                          <attributeDescription id="81">
+                            <name>size_EXPORT</name>
+                            <valueType>3</valueType>
+                            <blockType>1</blockType>
+                            <defaultValue>0.0</defaultValue>
+                            <index>10</index>
+                          </attributeDescription>
+                          <constructionDescription>size_EXPORT</constructionDescription>
+                          <statistics class="linked-list" id="82">
+                            <NumericalStatistics id="83">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <valueCounter>0</valueCounter>
+                            </NumericalStatistics>
+                            <WeightedNumericalStatistics id="84">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <totalWeight>0.0</totalWeight>
+                              <count>0.0</count>
+                            </WeightedNumericalStatistics>
+                            <com.rapidminer.example.MinMaxStatistics id="85">
+                              <minimum>Infinity</minimum>
+                              <maximum>-Infinity</maximum>
+                            </com.rapidminer.example.MinMaxStatistics>
+                            <UnknownStatistics id="86">
+                              <unknownCounter>0</unknownCounter>
+                            </UnknownStatistics>
+                          </statistics>
+                          <transformations id="87"/>
+                        </default>
+                      </com.rapidminer.example.table.AbstractAttribute>
+                    </attribute>
+                  </AttributeRole>
+                  <AttributeRole id="88">
+                    <special>false</special>
+                    <attribute class="NumericalAttribute" id="89" serialization="custom">
+                      <com.rapidminer.example.table.AbstractAttribute>
+                        <default>
+                          <annotations id="90">
+                            <keyValueMap id="91">
+                              <entry>
+                                <string>sql_type</string>
+                                <string>INT</string>
+                              </entry>
+                            </keyValueMap>
+                          </annotations>
+                          <attributeDescription id="92">
+                            <name>size_IAT</name>
+                            <valueType>3</valueType>
+                            <blockType>1</blockType>
+                            <defaultValue>0.0</defaultValue>
+                            <index>11</index>
+                          </attributeDescription>
+                          <constructionDescription>size_IAT</constructionDescription>
+                          <statistics class="linked-list" id="93">
+                            <NumericalStatistics id="94">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <valueCounter>0</valueCounter>
+                            </NumericalStatistics>
+                            <WeightedNumericalStatistics id="95">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <totalWeight>0.0</totalWeight>
+                              <count>0.0</count>
+                            </WeightedNumericalStatistics>
+                            <com.rapidminer.example.MinMaxStatistics id="96">
+                              <minimum>Infinity</minimum>
+                              <maximum>-Infinity</maximum>
+                            </com.rapidminer.example.MinMaxStatistics>
+                            <UnknownStatistics id="97">
+                              <unknownCounter>0</unknownCounter>
+                            </UnknownStatistics>
+                          </statistics>
+                          <transformations id="98"/>
+                        </default>
+                      </com.rapidminer.example.table.AbstractAttribute>
+                    </attribute>
+                  </AttributeRole>
+                  <AttributeRole id="99">
+                    <special>false</special>
+                    <attribute class="NumericalAttribute" id="100" serialization="custom">
+                      <com.rapidminer.example.table.AbstractAttribute>
+                        <default>
+                          <annotations id="101">
+                            <keyValueMap id="102">
+                              <entry>
+                                <string>sql_type</string>
+                                <string>INT</string>
+                              </entry>
+                            </keyValueMap>
+                          </annotations>
+                          <attributeDescription id="103">
+                            <name>size_Bound_IAT</name>
+                            <valueType>3</valueType>
+                            <blockType>1</blockType>
+                            <defaultValue>0.0</defaultValue>
+                            <index>12</index>
+                          </attributeDescription>
+                          <constructionDescription>size_Bound_IAT</constructionDescription>
+                          <statistics class="linked-list" id="104">
+                            <NumericalStatistics id="105">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <valueCounter>0</valueCounter>
+                            </NumericalStatistics>
+                            <WeightedNumericalStatistics id="106">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <totalWeight>0.0</totalWeight>
+                              <count>0.0</count>
+                            </WeightedNumericalStatistics>
+                            <com.rapidminer.example.MinMaxStatistics id="107">
+                              <minimum>Infinity</minimum>
+                              <maximum>-Infinity</maximum>
+                            </com.rapidminer.example.MinMaxStatistics>
+                            <UnknownStatistics id="108">
+                              <unknownCounter>0</unknownCounter>
+                            </UnknownStatistics>
+                          </statistics>
+                          <transformations id="109"/>
+                        </default>
+                      </com.rapidminer.example.table.AbstractAttribute>
+                    </attribute>
+                  </AttributeRole>
+                  <AttributeRole id="110">
+                    <special>false</special>
+                    <attribute class="NumericalAttribute" id="111" serialization="custom">
+                      <com.rapidminer.example.table.AbstractAttribute>
+                        <default>
+                          <annotations id="112">
+                            <keyValueMap id="113">
+                              <entry>
+                                <string>sql_type</string>
+                                <string>INT</string>
+                              </entry>
+                            </keyValueMap>
+                          </annotations>
+                          <attributeDescription id="114">
+                            <name>size_LOAD_CONFIG</name>
+                            <valueType>3</valueType>
+                            <blockType>1</blockType>
+                            <defaultValue>0.0</defaultValue>
+                            <index>13</index>
+                          </attributeDescription>
+                          <constructionDescription>size_LOAD_CONFIG</constructionDescription>
+                          <statistics class="linked-list" id="115">
+                            <NumericalStatistics id="116">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <valueCounter>0</valueCounter>
+                            </NumericalStatistics>
+                            <WeightedNumericalStatistics id="117">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <totalWeight>0.0</totalWeight>
+                              <count>0.0</count>
+                            </WeightedNumericalStatistics>
+                            <com.rapidminer.example.MinMaxStatistics id="118">
+                              <minimum>Infinity</minimum>
+                              <maximum>-Infinity</maximum>
+                            </com.rapidminer.example.MinMaxStatistics>
+                            <UnknownStatistics id="119">
+                              <unknownCounter>0</unknownCounter>
+                            </UnknownStatistics>
+                          </statistics>
+                          <transformations id="120"/>
+                        </default>
+                      </com.rapidminer.example.table.AbstractAttribute>
+                    </attribute>
+                  </AttributeRole>
+                  <AttributeRole id="121">
+                    <special>false</special>
+                    <attribute class="NumericalAttribute" id="122" serialization="custom">
+                      <com.rapidminer.example.table.AbstractAttribute>
+                        <default>
+                          <annotations id="123">
+                            <keyValueMap id="124">
+                              <entry>
+                                <string>sql_type</string>
+                                <string>INT</string>
+                              </entry>
+                            </keyValueMap>
+                          </annotations>
+                          <attributeDescription id="125">
+                            <name>size_BASERELOC</name>
+                            <valueType>3</valueType>
+                            <blockType>1</blockType>
+                            <defaultValue>0.0</defaultValue>
+                            <index>14</index>
+                          </attributeDescription>
+                          <constructionDescription>size_BASERELOC</constructionDescription>
+                          <statistics class="linked-list" id="126">
+                            <NumericalStatistics id="127">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <valueCounter>0</valueCounter>
+                            </NumericalStatistics>
+                            <WeightedNumericalStatistics id="128">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <totalWeight>0.0</totalWeight>
+                              <count>0.0</count>
+                            </WeightedNumericalStatistics>
+                            <com.rapidminer.example.MinMaxStatistics id="129">
+                              <minimum>Infinity</minimum>
+                              <maximum>-Infinity</maximum>
+                            </com.rapidminer.example.MinMaxStatistics>
+                            <UnknownStatistics id="130">
+                              <unknownCounter>0</unknownCounter>
+                            </UnknownStatistics>
+                          </statistics>
+                          <transformations id="131"/>
+                        </default>
+                      </com.rapidminer.example.table.AbstractAttribute>
+                    </attribute>
+                  </AttributeRole>
+                  <AttributeRole id="132">
+                    <special>false</special>
+                    <attribute class="NumericalAttribute" id="133" serialization="custom">
+                      <com.rapidminer.example.table.AbstractAttribute>
+                        <default>
+                          <annotations id="134">
+                            <keyValueMap id="135">
+                              <entry>
+                                <string>sql_type</string>
+                                <string>INT</string>
+                              </entry>
+                            </keyValueMap>
+                          </annotations>
+                          <attributeDescription id="136">
+                            <name>size_CLR_Header</name>
+                            <valueType>3</valueType>
+                            <blockType>1</blockType>
+                            <defaultValue>0.0</defaultValue>
+                            <index>15</index>
+                          </attributeDescription>
+                          <constructionDescription>size_CLR_Header</constructionDescription>
+                          <statistics class="linked-list" id="137">
+                            <NumericalStatistics id="138">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <valueCounter>0</valueCounter>
+                            </NumericalStatistics>
+                            <WeightedNumericalStatistics id="139">
+                              <sum>0.0</sum>
+                              <squaredSum>0.0</squaredSum>
+                              <totalWeight>0.0</totalWeight>
+                              <count>0.0</count>
+                            </WeightedNumericalStatistics>
+                            <com.rapidminer.example.MinMaxStatistics id="140">
+                              <minimum>Infinity</minimum>
+                              <maximum>-Infinity</maximum>
+                            </com.rapidminer.example.MinMaxStatistics>
+                            <UnknownStatistics id="141">
+                              <unknownCounter>0</unknownCounter>
+                            </UnknownStatistics>
+                          </statistics>
+                          <transformations id="142"/>
+                        </default>
+                      </com.rapidminer.example.table.AbstractAttribute>
+                    </attribute>
+                  </AttributeRole>
+                  <AttributeRole id="143">
+                    <special>true</special>
+                    <specialName>label</specialName>
+                    <attribute class="PolynominalAttribute" id="144" serialization="custom">
+                      <com.rapidminer.example.table.AbstractAttribute>
+                        <default>
+                          <annotations id="145">
+                            <keyValueMap id="146">
+                              <entry>
+                                <string>sql_type</string>
+                                <string>VARCHAR</string>
+                              </entry>
+                            </keyValueMap>
+                          </annotations>
+                          <attributeDescription id="147">
+                            <name>malware</name>
+                            <valueType>1</valueType>
+                            <blockType>1</blockType>
+                            <defaultValue>0.0</defaultValue>
+                            <index>3</index>
+                          </attributeDescription>
+                          <constructionDescription>malware</constructionDescription>
+                          <statistics class="linked-list" id="148">
+                            <NominalStatistics id="149">
+                              <mode>-1</mode>
+                              <maxCounter>0</maxCounter>
+                            </NominalStatistics>
+                            <UnknownStatistics id="150">
+                              <unknownCounter>0</unknownCounter>
+                            </UnknownStatistics>
+                          </statistics>
+                          <transformations id="151"/>
+                        </default>
+                      </com.rapidminer.example.table.AbstractAttribute>
+                      <PolynominalAttribute>
+                        <default>
+                          <nominalMapping class="PolynominalMapping" id="152">
+                            <symbolToIndexMap id="153">
+                              <entry>
+                                <string>bening</string>
+                                <int>1</int>
+                              </entry>
+                              <entry>
+                                <string>malware</string>
+                                <int>0</int>
+                              </entry>
+                            </symbolToIndexMap>
+                            <indexToSymbolMap id="154">
+                              <string>malware</string>
+                              <string>bening</string>
+                            </indexToSymbolMap>
+                          </nominalMapping>
+                        </default>
+                      </PolynominalAttribute>
+                    </attribute>
+                  </AttributeRole>
+                </attributes>
+              </attributes>
+            </default>
+          </com.rapidminer.example.set.HeaderExampleSet>
+        </headerExampleSet>
+      </default>
+    </com.rapidminer.operator.AbstractModel>
+    <TreeModel>
+      <default>
+        <root id="155">
+          <children class="linked-list" id="156">
+            <com.rapidminer.operator.learner.tree.Edge id="157">
+              <condition class="com.rapidminer.operator.learner.tree.GreaterSplitCondition" id="158">
+                <attributeName>blocks_in_file</attributeName>
+                <value>0.5</value>
+              </condition>
+              <child id="159">
+                <children class="linked-list" id="160">
+                  <com.rapidminer.operator.learner.tree.Edge id="161">
+                    <condition class="com.rapidminer.operator.learner.tree.GreaterSplitCondition" id="162">
+                      <attributeName>size_LOAD_CONFIG</attributeName>
+                      <value>88.0</value>
+                    </condition>
+                    <child id="163">
+                      <children class="linked-list" id="164">
+                        <com.rapidminer.operator.learner.tree.Edge id="165">
+                          <condition class="com.rapidminer.operator.learner.tree.GreaterSplitCondition" id="166">
+                            <attributeName>size_LOAD_CONFIG</attributeName>
+                            <value>166.0</value>
+                          </condition>
+                          <child id="167">
+                            <children class="linked-list" id="168">
+                              <com.rapidminer.operator.learner.tree.Edge id="169">
+                                <condition class="com.rapidminer.operator.learner.tree.GreaterSplitCondition" id="170">
+                                  <attributeName>bytes_in_last_block</attributeName>
+                                  <value>75.0</value>
+                                </condition>
+                                <child id="171">
+                                  <children class="linked-list" id="172">
+                                    <com.rapidminer.operator.learner.tree.Edge id="173">
+                                      <condition class="com.rapidminer.operator.learner.tree.GreaterSplitCondition" id="174">
+                                        <attributeName>bytes_in_last_block</attributeName>
+                                        <value>153.0</value>
+                                      </condition>
+                                      <child id="175">
+                                        <children class="linked-list" id="176">
+                                          <com.rapidminer.operator.learner.tree.Edge id="177">
+                                            <condition class="com.rapidminer.operator.learner.tree.GreaterSplitCondition" id="178">
+                                              <attributeName>bytes_in_last_block</attributeName>
+                                              <value>1253.0</value>
+                                            </condition>
+                                            <child id="179">
+                                              <label>malware</label>
+                                              <children class="linked-list" id="180"/>
+                                              <counterMap class="linked-hash-map" id="181">
+                                                <entry>
+                                                  <string>malware</string>
+                                                  <int>18</int>
+                                                </entry>
+                                                <entry>
+                                                  <string>bening</string>
+                                                  <int>0</int>
+                                                </entry>
+                                              </counterMap>
+                                            </child>
+                                          </com.rapidminer.operator.learner.tree.Edge>
+                                          <com.rapidminer.operator.learner.tree.Edge id="182">
+                                            <condition class="com.rapidminer.operator.learner.tree.LessEqualsSplitCondition" id="183">
+                                              <attributeName>bytes_in_last_block</attributeName>
+                                              <value>1253.0</value>
+                                            </condition>
+                                            <child id="184">
+                                              <label>bening</label>
+                                              <children class="linked-list" id="185"/>
+                                              <counterMap class="linked-hash-map" id="186">
+                                                <entry>
+                                                  <string>malware</string>
+                                                  <int>0</int>
+                                                </entry>
+                                                <entry>
+                                                  <string>bening</string>
+                                                  <int>19</int>
+                                                </entry>
+                                              </counterMap>
+                                            </child>
+                                          </com.rapidminer.operator.learner.tree.Edge>
+                                        </children>
+                                        <counterMap class="linked-hash-map" id="187"/>
+                                      </child>
+                                    </com.rapidminer.operator.learner.tree.Edge>
+                                    <com.rapidminer.operator.learner.tree.Edge id="188">
+                                      <condition class="com.rapidminer.operator.learner.tree.LessEqualsSplitCondition" id="189">
+                                        <attributeName>bytes_in_last_block</attributeName>
+                                        <value>153.0</value>
+                                      </condition>
+                                      <child id="190">
+                                        <children class="linked-list" id="191">
+                                          <com.rapidminer.operator.learner.tree.Edge id="192">
+                                            <condition class="com.rapidminer.operator.learner.tree.GreaterSplitCondition" id="193">
+                                              <attributeName>blocks_in_file</attributeName>
+                                              <value>2.5</value>
+                                            </condition>
+                                            <child id="194">
+                                              <label>malware</label>
+                                              <children class="linked-list" id="195"/>
+                                              <counterMap class="linked-hash-map" id="196">
+                                                <entry>
+                                                  <string>malware</string>
+                                                  <int>344</int>
+                                                </entry>
+                                                <entry>
+                                                  <string>bening</string>
+                                                  <int>1</int>
+                                                </entry>
+                                              </counterMap>
+                                            </child>
+                                          </com.rapidminer.operator.learner.tree.Edge>
+                                          <com.rapidminer.operator.learner.tree.Edge id="197">
+                                            <condition class="com.rapidminer.operator.learner.tree.LessEqualsSplitCondition" id="198">
+                                              <attributeName>blocks_in_file</attributeName>
+                                              <value>2.5</value>
+                                            </condition>
+                                            <child id="199">
+                                              <children class="linked-list" id="200">
+                                                <com.rapidminer.operator.learner.tree.Edge id="201">
+                                                  <condition class="com.rapidminer.operator.learner.tree.GreaterSplitCondition" id="202">
+                                                    <attributeName>min_extra_paragraphs</attributeName>
+                                                    <value>2.0</value>
+                                                  </condition>
+                                                  <child id="203">
+                                                    <label>malware</label>
+                                                    <children class="linked-list" id="204"/>
+                                                    <counterMap class="linked-hash-map" id="205">
+                                                      <entry>
+                                                        <string>malware</string>
+                                                        <int>33</int>
+                                                      </entry>
+                                                      <entry>
+                                                        <string>bening</string>
+                                                        <int>0</int>
+                                                      </entry>
+                                                    </counterMap>
+                                                  </child>
+                                                </com.rapidminer.operator.learner.tree.Edge>
+                                                <com.rapidminer.operator.learner.tree.Edge id="206">
+                                                  <condition class="com.rapidminer.operator.learner.tree.LessEqualsSplitCondition" id="207">
+                                                    <attributeName>min_extra_paragraphs</attributeName>
+                                                    <value>2.0</value>
+                                                  </condition>
+                                                  <child id="208">
+                                                    <children class="linked-list" id="209">
+                                                      <com.rapidminer.operator.learner.tree.Edge id="210">
+                                                        <condition class="com.rapidminer.operator.learner.tree.GreaterSplitCondition" id="211">
+                                                          <attributeName>blocks_in_file</attributeName>
+                                                          <value>1.5</value>
+                                                        </condition>
+                                                        <child id="212">
+                                                          <label>bening</label>
+                                                          <children class="linked-list" id="213"/>
+                                                          <counterMap class="linked-hash-map" id="214">
+                                                            <entry>
+                                                              <string>malware</string>
+                                                              <int>0</int>
+                                                            </entry>
+                                                            <entry>
+                                                              <string>bening</string>
+                                                              <int>11</int>
+                                                            </entry>
+                                                          </counterMap>
+                                                        </child>
+                                                      </com.rapidminer.operator.learner.tree.Edge>
+                                                      <com.rapidminer.operator.learner.tree.Edge id="215">
+                                                        <condition class="com.rapidminer.operator.learner.tree.LessEqualsSplitCondition" id="216">
+                                                          <attributeName>blocks_in_file</attributeName>
+                                                          <value>1.5</value>
+                                                        </condition>
+                                                        <child id="217">
+                                                          <label>malware</label>
+                                                          <children class="linked-list" id="218"/>
+                                                          <counterMap class="linked-hash-map" id="219">
+                                                            <entry>
+                                                              <string>malware</string>
+                                                              <int>4</int>
+                                                            </entry>
+                                                            <entry>
+                                                              <string>bening</string>
+                                                              <int>0</int>
+                                                            </entry>
+                                                          </counterMap>
+                                                        </child>
+                                                      </com.rapidminer.operator.learner.tree.Edge>
+                                                    </children>
+                                                    <counterMap class="linked-hash-map" id="220"/>
+                                                  </child>
+                                                </com.rapidminer.operator.learner.tree.Edge>
+                                              </children>
+                                              <counterMap class="linked-hash-map" id="221"/>
+                                            </child>
+                                          </com.rapidminer.operator.learner.tree.Edge>
+                                        </children>
+                                        <counterMap class="linked-hash-map" id="222"/>
+                                      </child>
+                                    </com.rapidminer.operator.learner.tree.Edge>
+                                  </children>
+                                  <counterMap class="linked-hash-map" id="223"/>
+                                </child>
+                              </com.rapidminer.operator.learner.tree.Edge>
+                              <com.rapidminer.operator.learner.tree.Edge id="224">
+                                <condition class="com.rapidminer.operator.learner.tree.LessEqualsSplitCondition" id="225">
+                                  <attributeName>bytes_in_last_block</attributeName>
+                                  <value>75.0</value>
+                                </condition>
+                                <child id="226">
+                                  <label>bening</label>
+                                  <children class="linked-list" id="227"/>
+                                  <counterMap class="linked-hash-map" id="228">
+                                    <entry>
+                                      <string>malware</string>
+                                      <int>1</int>
+                                    </entry>
+                                    <entry>
+                                      <string>bening</string>
+                                      <int>19</int>
+                                    </entry>
+                                  </counterMap>
+                                </child>
+                              </com.rapidminer.operator.learner.tree.Edge>
+                            </children>
+                            <counterMap class="linked-hash-map" id="229"/>
+                          </child>
+                        </com.rapidminer.operator.learner.tree.Edge>
+                        <com.rapidminer.operator.learner.tree.Edge id="230">
+                          <condition class="com.rapidminer.operator.learner.tree.LessEqualsSplitCondition" id="231">
+                            <attributeName>size_LOAD_CONFIG</attributeName>
+                            <value>166.0</value>
+                          </condition>
+                          <child id="232">
+                            <children class="linked-list" id="233">
+                              <com.rapidminer.operator.learner.tree.Edge id="234">
+                                <condition class="com.rapidminer.operator.learner.tree.GreaterSplitCondition" id="235">
+                                  <attributeName>numberOfSymbols</attributeName>
+                                  <value>18432.0</value>
+                                </condition>
+                                <child id="236">
+                                  <label>malware</label>
+                                  <children class="linked-list" id="237"/>
+                                  <counterMap class="linked-hash-map" id="238">
+                                    <entry>
+                                      <string>malware</string>
+                                      <int>3</int>
+                                    </entry>
+                                    <entry>
+                                      <string>bening</string>
+                                      <int>0</int>
+                                    </entry>
+                                  </counterMap>
+                                </child>
+                              </com.rapidminer.operator.learner.tree.Edge>
+                              <com.rapidminer.operator.learner.tree.Edge id="239">
+                                <condition class="com.rapidminer.operator.learner.tree.LessEqualsSplitCondition" id="240">
+                                  <attributeName>numberOfSymbols</attributeName>
+                                  <value>18432.0</value>
+                                </condition>
+                                <child id="241">
+                                  <children class="linked-list" id="242">
+                                    <com.rapidminer.operator.learner.tree.Edge id="243">
+                                      <condition class="com.rapidminer.operator.learner.tree.GreaterSplitCondition" id="244">
+                                        <attributeName>size_BASERELOC</attributeName>
+                                        <value>8.0</value>
+                                      </condition>
+                                      <child id="245">
+                                        <label>bening</label>
+                                        <children class="linked-list" id="246"/>
+                                        <counterMap class="linked-hash-map" id="247">
+                                          <entry>
+                                            <string>malware</string>
+                                            <int>0</int>
+                                          </entry>
+                                          <entry>
+                                            <string>bening</string>
+                                            <int>513</int>
+                                          </entry>
+                                        </counterMap>
+                                      </child>
+                                    </com.rapidminer.operator.learner.tree.Edge>
+                                    <com.rapidminer.operator.learner.tree.Edge id="248">
+                                      <condition class="com.rapidminer.operator.learner.tree.LessEqualsSplitCondition" id="249">
+                                        <attributeName>size_BASERELOC</attributeName>
+                                        <value>8.0</value>
+                                      </condition>
+                                      <child id="250">
+                                        <label>malware</label>
+                                        <children class="linked-list" id="251"/>
+                                        <counterMap class="linked-hash-map" id="252">
+                                          <entry>
+                                            <string>malware</string>
+                                            <int>2</int>
+                                          </entry>
+                                          <entry>
+                                            <string>bening</string>
+                                            <int>0</int>
+                                          </entry>
+                                        </counterMap>
+                                      </child>
+                                    </com.rapidminer.operator.learner.tree.Edge>
+                                  </children>
+                                  <counterMap class="linked-hash-map" id="253"/>
+                                </child>
+                              </com.rapidminer.operator.learner.tree.Edge>
+                            </children>
+                            <counterMap class="linked-hash-map" id="254"/>
+                          </child>
+                        </com.rapidminer.operator.learner.tree.Edge>
+                      </children>
+                      <counterMap class="linked-hash-map" id="255"/>
+                    </child>
+                  </com.rapidminer.operator.learner.tree.Edge>
+                  <com.rapidminer.operator.learner.tree.Edge id="256">
+                    <condition class="com.rapidminer.operator.learner.tree.LessEqualsSplitCondition" id="257">
+                      <attributeName>size_LOAD_CONFIG</attributeName>
+                      <value>88.0</value>
+                    </condition>
+                    <child id="258">
+                      <label>malware</label>
+                      <children class="linked-list" id="259"/>
+                      <counterMap class="linked-hash-map" id="260">
+                        <entry>
+                          <string>malware</string>
+                          <int>39315</int>
+                        </entry>
+                        <entry>
+                          <string>bening</string>
+                          <int>824</int>
+                        </entry>
+                      </counterMap>
+                    </child>
+                  </com.rapidminer.operator.learner.tree.Edge>
+                </children>
+                <counterMap class="linked-hash-map" id="261"/>
+              </child>
+            </com.rapidminer.operator.learner.tree.Edge>
+            <com.rapidminer.operator.learner.tree.Edge id="262">
+              <condition class="com.rapidminer.operator.learner.tree.LessEqualsSplitCondition" id="263">
+                <attributeName>blocks_in_file</attributeName>
+                <value>0.5</value>
+              </condition>
+              <child id="264">
+                <children class="linked-list" id="265">
+                  <com.rapidminer.operator.learner.tree.Edge id="266">
+                    <condition class="com.rapidminer.operator.learner.tree.GreaterSplitCondition" id="267">
+                      <attributeName>size_CLR_Header</attributeName>
+                      <value>36.0</value>
+                    </condition>
+                    <child id="268">
+                      <label>bening</label>
+                      <children class="linked-list" id="269"/>
+                      <counterMap class="linked-hash-map" id="270">
+                        <entry>
+                          <string>malware</string>
+                          <int>2</int>
+                        </entry>
+                        <entry>
+                          <string>bening</string>
+                          <int>249</int>
+                        </entry>
+                      </counterMap>
+                    </child>
+                  </com.rapidminer.operator.learner.tree.Edge>
+                  <com.rapidminer.operator.learner.tree.Edge id="271">
+                    <condition class="com.rapidminer.operator.learner.tree.LessEqualsSplitCondition" id="272">
+                      <attributeName>size_CLR_Header</attributeName>
+                      <value>36.0</value>
+                    </condition>
+                    <child id="273">
+                      <label>malware</label>
+                      <children class="linked-list" id="274"/>
+                      <counterMap class="linked-hash-map" id="275">
+                        <entry>
+                          <string>malware</string>
+                          <int>44</int>
+                        </entry>
+                        <entry>
+                          <string>bening</string>
+                          <int>0</int>
+                        </entry>
+                      </counterMap>
+                    </child>
+                  </com.rapidminer.operator.learner.tree.Edge>
+                </children>
+                <counterMap class="linked-hash-map" id="276"/>
+              </child>
+            </com.rapidminer.operator.learner.tree.Edge>
+          </children>
+          <counterMap class="linked-hash-map" id="277"/>
+        </root>
+      </default>
+    </TreeModel>
+  </TreeModel>
+</object-stream>

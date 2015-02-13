@@ -50,7 +50,7 @@ public class PEFileDump {
      */
     public String getCSV(String delimeter, String escape, String newLine) {
         if (delimeter == null) {
-            delimeter = ",";
+            delimeter = ";";
         }
         if (escape == null) {
             escape = "\"";

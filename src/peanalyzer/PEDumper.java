@@ -36,6 +36,9 @@ public class PEDumper {
         Yaml yaml = new Yaml();
 
         Map mzHeader = (Map) yaml.load(dump);
+        if (mzHeader == null) {
+            return;
+        }
 
         fileDump.bytes_in_last_block = (Integer) mzHeader.get("bytes_in_last_block");
         fileDump.blocks_in_file = (Integer) mzHeader.get("blocks_in_file");
